@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Twilio Multiple Particiant Sample' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Twilio Multiple Particiant Sample
+  pod 'TwilioVideo', '2.0.0-preview9'
+
+end

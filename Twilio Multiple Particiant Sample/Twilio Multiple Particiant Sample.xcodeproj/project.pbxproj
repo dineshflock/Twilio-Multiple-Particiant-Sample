@@ -13,9 +13,11 @@
 		7182C8832084974E008A9E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7182C8822084974E008A9E1C /* Assets.xcassets */; };
 		7182C8862084974E008A9E1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7182C8842084974E008A9E1C /* LaunchScreen.storyboard */; };
 		7182C8892084974E008A9E1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7182C8882084974E008A9E1C /* main.m */; };
+		C019A9760BD4E491C55DE946 /* libPods-Twilio Multiple Particiant Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8E89C68B73755891E53CF9 /* libPods-Twilio Multiple Particiant Sample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21DFD93FBBC4980BD96AAF91 /* Pods-Twilio Multiple Particiant Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twilio Multiple Particiant Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twilio Multiple Particiant Sample/Pods-Twilio Multiple Particiant Sample.release.xcconfig"; sourceTree = "<group>"; };
 		7182C8762084974E008A9E1C /* Twilio Multiple Particiant Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twilio Multiple Particiant Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7182C8792084974E008A9E1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7182C87A2084974E008A9E1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		7182C8852084974E008A9E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7182C8872084974E008A9E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7182C8882084974E008A9E1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E8E89C68B73755891E53CF9 /* libPods-Twilio Multiple Particiant Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Twilio Multiple Particiant Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16564995BB2B31DC55FC962 /* Pods-Twilio Multiple Particiant Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twilio Multiple Particiant Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twilio Multiple Particiant Sample/Pods-Twilio Multiple Particiant Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C019A9760BD4E491C55DE946 /* libPods-Twilio Multiple Particiant Sample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F4A27C76CCF1BA238C5DC06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D16564995BB2B31DC55FC962 /* Pods-Twilio Multiple Particiant Sample.debug.xcconfig */,
+				21DFD93FBBC4980BD96AAF91 /* Pods-Twilio Multiple Particiant Sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7182C86D2084974E008A9E1C = {
 			isa = PBXGroup;
 			children = (
 				7182C8782084974E008A9E1C /* Twilio Multiple Particiant Sample */,
 				7182C8772084974E008A9E1C /* Products */,
+				3F4A27C76CCF1BA238C5DC06 /* Pods */,
+				ABB1831F1494699BD6808D19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = "Twilio Multiple Particiant Sample";
 			sourceTree = "<group>";
 		};
+		ABB1831F1494699BD6808D19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E89C68B73755891E53CF9 /* libPods-Twilio Multiple Particiant Sample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7182C88C2084974E008A9E1C /* Build configuration list for PBXNativeTarget "Twilio Multiple Particiant Sample" */;
 			buildPhases = (
+				8B630A2C805E30313EDF5B1E /* [CP] Check Pods Manifest.lock */,
 				7182C8722084974E008A9E1C /* Sources */,
 				7182C8732084974E008A9E1C /* Frameworks */,
 				7182C8742084974E008A9E1C /* Resources */,
+				C9EB9BB9778A661B0EAEDFDD /* [CP] Embed Pods Frameworks */,
+				53A4C4007CCE97903D6DAA28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53A4C4007CCE97903D6DAA28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twilio Multiple Particiant Sample/Pods-Twilio Multiple Particiant Sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B630A2C805E30313EDF5B1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9EB9BB9778A661B0EAEDFDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twilio Multiple Particiant Sample/Pods-Twilio Multiple Particiant Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7182C8722084974E008A9E1C /* Sources */ = {
@@ -276,6 +351,7 @@
 		};
 		7182C88D2084974E008A9E1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16564995BB2B31DC55FC962 /* Pods-Twilio Multiple Particiant Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +365,7 @@
 		};
 		7182C88E2084974E008A9E1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DFD93FBBC4980BD96AAF91 /* Pods-Twilio Multiple Particiant Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
