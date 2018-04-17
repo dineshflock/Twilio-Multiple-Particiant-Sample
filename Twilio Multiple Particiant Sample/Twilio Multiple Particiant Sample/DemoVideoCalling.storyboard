@@ -99,6 +99,16 @@
                                     <action selector="dismissButtonTapped:" destination="jSN-F6-Q4K" eventType="touchUpInside" id="mQK-lF-Lve"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-H7-lSC">
+                                <rect key="frame" x="16" y="185" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="H264"/>
+                                    <segment title="VP8"/>
+                                    <segment title="VP9"/>
+                                </segments>
+                                <color key="tintColor" red="0.8862745098" green="0.1137254902" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -137,12 +147,13 @@
                         <outlet property="roomLabel" destination="Zud-AS-DEE" id="20X-Ci-kMk"/>
                         <outlet property="roomLine" destination="7dZ-Ur-uSj" id="FnZ-FM-uD0"/>
                         <outlet property="roomTextField" destination="EkL-i8-cDP" id="lGF-ox-K6d"/>
+                        <outlet property="segmentedControl" destination="wyH-H7-lSC" id="X98-cj-rnF"/>
                         <segue destination="ArY-ew-klX" kind="presentation" identifier="video" id="sbG-Fs-6UH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JfB-JL-3y4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15" y="493"/>
+            <point key="canvasLocation" x="13.6" y="492.50374812593708"/>
         </scene>
         <!--Multiple Participant View Controller-->
         <scene sceneID="z0A-sI-ada">
