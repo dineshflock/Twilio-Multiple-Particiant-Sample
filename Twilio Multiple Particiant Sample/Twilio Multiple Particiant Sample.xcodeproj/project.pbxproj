@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710822E62085E3D800268E1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710822E52085E3D800268E1B /* ViewController.m */; };
 		7182C87B2084974E008A9E1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7182C87A2084974E008A9E1C /* AppDelegate.m */; };
 		7182C8832084974E008A9E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7182C8822084974E008A9E1C /* Assets.xcassets */; };
 		7182C8862084974E008A9E1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7182C8842084974E008A9E1C /* LaunchScreen.storyboard */; };
 		7182C8892084974E008A9E1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7182C8882084974E008A9E1C /* main.m */; };
 		7182C8962084ACF9008A9E1C /* DemoVideoCalling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7182C8902084ACF8008A9E1C /* DemoVideoCalling.storyboard */; };
 		7182C8972084ACF9008A9E1C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7182C8922084ACF8008A9E1C /* Utils.m */; };
-		7182C8982084ACF9008A9E1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7182C8942084ACF9008A9E1C /* ViewController.m */; };
 		7182C8992084ACF9008A9E1C /* MultipleParticipantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7182C8952084ACF9008A9E1C /* MultipleParticipantViewController.m */; };
 		C019A9760BD4E491C55DE946 /* libPods-Twilio Multiple Particiant Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8E89C68B73755891E53CF9 /* libPods-Twilio Multiple Particiant Sample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21DFD93FBBC4980BD96AAF91 /* Pods-Twilio Multiple Particiant Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twilio Multiple Particiant Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twilio Multiple Particiant Sample/Pods-Twilio Multiple Particiant Sample.release.xcconfig"; sourceTree = "<group>"; };
+		710822E42085E3D800268E1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		710822E52085E3D800268E1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7182C8762084974E008A9E1C /* Twilio Multiple Particiant Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twilio Multiple Particiant Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7182C8792084974E008A9E1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7182C87A2084974E008A9E1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		7182C8902084ACF8008A9E1C /* DemoVideoCalling.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoVideoCalling.storyboard; sourceTree = "<group>"; };
 		7182C8912084ACF8008A9E1C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		7182C8922084ACF8008A9E1C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		7182C8932084ACF9008A9E1C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../Pingpong-iOS/src/VideoCalling/Demo/ViewController.h"; sourceTree = "<group>"; };
-		7182C8942084ACF9008A9E1C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../Pingpong-iOS/src/VideoCalling/Demo/ViewController.m"; sourceTree = "<group>"; };
 		7182C8952084ACF9008A9E1C /* MultipleParticipantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleParticipantViewController.m; sourceTree = "<group>"; };
 		9E8E89C68B73755891E53CF9 /* libPods-Twilio Multiple Particiant Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Twilio Multiple Particiant Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16564995BB2B31DC55FC962 /* Pods-Twilio Multiple Particiant Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twilio Multiple Particiant Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twilio Multiple Particiant Sample/Pods-Twilio Multiple Particiant Sample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,14 +85,14 @@
 				7182C8952084ACF9008A9E1C /* MultipleParticipantViewController.m */,
 				7182C8912084ACF8008A9E1C /* Utils.h */,
 				7182C8922084ACF8008A9E1C /* Utils.m */,
-				7182C8932084ACF9008A9E1C /* ViewController.h */,
-				7182C8942084ACF9008A9E1C /* ViewController.m */,
 				7182C8792084974E008A9E1C /* AppDelegate.h */,
 				7182C87A2084974E008A9E1C /* AppDelegate.m */,
 				7182C8822084974E008A9E1C /* Assets.xcassets */,
 				7182C8842084974E008A9E1C /* LaunchScreen.storyboard */,
 				7182C8872084974E008A9E1C /* Info.plist */,
 				7182C8882084974E008A9E1C /* main.m */,
+				710822E42085E3D800268E1B /* ViewController.h */,
+				710822E52085E3D800268E1B /* ViewController.m */,
 			);
 			path = "Twilio Multiple Particiant Sample";
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 				TargetAttributes = {
 					7182C8752084974E008A9E1C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -231,7 +231,7 @@
 				7182C8892084974E008A9E1C /* main.m in Sources */,
 				7182C87B2084974E008A9E1C /* AppDelegate.m in Sources */,
 				7182C8972084ACF9008A9E1C /* Utils.m in Sources */,
-				7182C8982084ACF9008A9E1C /* ViewController.m in Sources */,
+				710822E62085E3D800268E1B /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -346,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -358,11 +358,14 @@
 			baseConfigurationReference = D16564995BB2B31DC55FC962 /* Pods-Twilio Multiple Particiant Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B4X8EQS24E;
 				INFOPLIST_FILE = "Twilio Multiple Particiant Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dineshkumar.Twilio-Multiple-Particiant-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = to.talk.goto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1d994b11-0dea-4806-9d04-69c13d275ea7";
+				PROVISIONING_PROFILE_SPECIFIER = "Flock Development Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -372,11 +375,14 @@
 			baseConfigurationReference = 21DFD93FBBC4980BD96AAF91 /* Pods-Twilio Multiple Particiant Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B4X8EQS24E;
 				INFOPLIST_FILE = "Twilio Multiple Particiant Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dineshkumar.Twilio-Multiple-Particiant-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = to.talk.goto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1d994b11-0dea-4806-9d04-69c13d275ea7";
+				PROVISIONING_PROFILE_SPECIFIER = "Flock Development Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
