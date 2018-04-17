@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSString *accessToken;
 @property (nonatomic, strong) NSString *roomName;
+@property (nonatomic, strong) NSString * preferredCodec;
 
 @end
 

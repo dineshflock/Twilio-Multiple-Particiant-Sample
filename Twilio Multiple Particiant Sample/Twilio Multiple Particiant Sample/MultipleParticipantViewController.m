@@ -30,7 +30,6 @@ UITableViewDelegate
 @property (nonatomic, strong) TVICameraCapturer *camera;
 @property (nonatomic, strong) TVILocalVideoTrack *localVideoTrack;
 @property (nonatomic, strong) TVILocalAudioTrack *localAudioTrack;
-
 @property (nonatomic, strong) TVIRoom *room;
 @property (nonatomic, weak) NSMutableArray *participants;
 
@@ -63,6 +62,7 @@ UITableViewDelegate
                                                                           // The name of the Room where the Client will attempt to connect to. Please note that if you pass an empty
                                                                           // Room `name`, the Client will create one for you. You can get the name or sid from any connected Room.
                                                                           builder.roomName = self.roomName;
+                                                                          builder.preferredVideoCodecs = @[self.preferredCodec];
                                                                       }];
     
     // Connect to the Room using the options we provided.
@@ -387,6 +387,7 @@ UITableViewDelegate
     self.statusLabel.text = [NSString stringWithFormat:@"%@ (Tracks : Video : %@, Audio : %@)",self.participant.identity,@(self.participant.videoTracks.count), @(self.participant.audioTracks.count)];
 }
 - (void)prepareForReuse {
+    [super prepareForReuse];
     [self.videoTrack removeRenderer:self.videoView];
     self.participant = nil;
     self.videoTrack = nil;
