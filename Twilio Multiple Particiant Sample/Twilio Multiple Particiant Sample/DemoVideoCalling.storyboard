@@ -99,9 +99,8 @@
                                     <action selector="dismissButtonTapped:" destination="jSN-F6-Q4K" eventType="touchUpInside" id="mQK-lF-Lve"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-H7-lSC">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-H7-lSC">
                                 <rect key="frame" x="16" y="185" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="H264"/>
                                     <segment title="VP8"/>
@@ -113,7 +112,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jgR-Qy-dC6" firstAttribute="top" secondItem="Zud-AS-DEE" secondAttribute="bottom" constant="21" id="0Am-2H-kE1"/>
+                            <constraint firstItem="MS5-kK-pbH" firstAttribute="top" secondItem="wyH-H7-lSC" secondAttribute="bottom" constant="21" id="1Bz-ue-wvI"/>
                             <constraint firstItem="yBQ-TH-XKZ" firstAttribute="leading" secondItem="3Bh-pO-6uY" secondAttribute="leadingMargin" id="1No-s2-asE"/>
+                            <constraint firstItem="wyH-H7-lSC" firstAttribute="leading" secondItem="3Bh-pO-6uY" secondAttribute="leadingMargin" id="5AB-ax-0IN"/>
                             <constraint firstItem="c0G-co-jhs" firstAttribute="baseline" secondItem="MS5-kK-pbH" secondAttribute="baseline" id="9bK-cn-fO1"/>
                             <constraint firstItem="yBQ-TH-XKZ" firstAttribute="top" secondItem="jgR-Qy-dC6" secondAttribute="bottom" constant="16" id="ADs-pC-In3"/>
                             <constraint firstItem="7dZ-Ur-uSj" firstAttribute="top" secondItem="Zud-AS-DEE" secondAttribute="bottom" id="AaN-mH-AYD"/>
@@ -125,6 +126,7 @@
                             <constraint firstItem="Zud-AS-DEE" firstAttribute="centerY" secondItem="3Bh-pO-6uY" secondAttribute="centerY" constant="-40" id="W6X-SU-S4S"/>
                             <constraint firstItem="H3x-x5-ep9" firstAttribute="trailing" secondItem="3Bh-pO-6uY" secondAttribute="trailingMargin" id="WAV-F4-Wa1"/>
                             <constraint firstItem="EkL-i8-cDP" firstAttribute="leading" secondItem="Zud-AS-DEE" secondAttribute="trailing" constant="21" id="Xef-61-OpD"/>
+                            <constraint firstItem="wyH-H7-lSC" firstAttribute="trailing" secondItem="3Bh-pO-6uY" secondAttribute="trailingMargin" id="Yeg-VQ-pND"/>
                             <constraint firstAttribute="leadingMargin" secondItem="jgR-Qy-dC6" secondAttribute="leading" id="bOl-NA-2zy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c0G-co-jhs" secondAttribute="trailing" id="bn2-rn-jxL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jgR-Qy-dC6" secondAttribute="trailing" id="dqW-B2-5zF"/>
